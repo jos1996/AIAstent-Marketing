@@ -93,7 +93,7 @@ export default function App() {
               onMouseLeave={e => (e.currentTarget.style.color = '#555')}
             >{item}</a>
           ))}
-          <a href="https://app.workarea.com/settings" style={{
+          <a href="https://worklyweb.netlify.app/settings/dashboard" style={{
             padding: '7px 18px', borderRadius: 100, fontSize: 13, fontWeight: 600,
             background: 'linear-gradient(135deg, #000 0%, #1a1a1a 100%)',
             color: '#fff', transition: 'all 0.3s',
@@ -615,7 +615,7 @@ function PricingCard({ name, price, period, features, cta, highlighted }: {
         <span style={{ fontSize: 38, fontWeight: 900, letterSpacing: '-1.5px', color: '#000' }}>{price}</span>
         {period && <span style={{ color: '#999', fontSize: 13 }}>{period}</span>}
       </div>
-      <a href="https://app.workarea.com/settings/billing" style={{
+      <a href="https://worklyweb.netlify.app/settings/billing" style={{
         display: 'block', textAlign: 'center',
         padding: '12px 0', borderRadius: 10, marginTop: 20, marginBottom: 24,
         background: highlighted ? 'linear-gradient(135deg, #000, #1a1a1a)' : 'transparent',
