@@ -8,9 +8,11 @@ function getOS(): 'mac' | 'windows' | 'linux' | 'unknown' {
   return 'unknown'
 }
 
-const DOWNLOAD_URLS = {
+const DOWNLOAD_URLS: Record<'mac' | 'windows' | 'linux' | 'unknown', string> = {
   mac: 'https://downloads.workarea.com/Workly-v1.0.0.dmg',
   windows: 'https://downloads.workarea.com/Workly-v1.0.0.exe',
+  linux: 'https://downloads.workarea.com/Workly-v1.0.0.dmg',
+  unknown: 'https://downloads.workarea.com/Workly-v1.0.0.dmg',
 }
 
 const Icon = ({ name, size = 24 }: { name: string; size?: number }) => {
